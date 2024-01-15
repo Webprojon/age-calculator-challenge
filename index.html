@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    </style>
+  </head>
+  <body>
+    <main class="age-calculator__main">
+       <div class="container">
+        <div class="data__inputs">
+          <div class="input">
+            <label for="userDay">day</label>
+            <input class="user__day inputs" type="number" name="userDay" id="userDay" placeholder="DD">
+            <span class="error__message" id="dayError"></span>
+          </div>
+          <div class="input">
+            <label for="userMonth">month</label>
+            <input class="user__month inputs" type="number" name="userMonth" id="userMonth" placeholder="MM">
+            <span class="error__message" id="monthError"></span>
+          </div>
+          <div class="input">
+            <label for="userYear">year</label>
+            <input class="user__year inputs" type="number" name="userYear" id="userYear" placeholder="YYYY">
+            <span class="error__message" id="yearError"></span>
+          </div>
+        </div>
+        <div class="submit__btn">
+          <div class="horizontal__line"></div>
+            <img class="arrow__btn" src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+        </div>
+        <div class="result__data">
+          <p><span class="years__sp span">--</span> years</p>
+          <p><span class="months__sp span">--</span> months</p>
+          <p><span class="days__sp span">--</span> days</p>
+        </div>
+       </div>
+    </main>
+    <!-- Main JS file -->
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
